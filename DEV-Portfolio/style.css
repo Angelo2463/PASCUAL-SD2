@@ -1,0 +1,87 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#landing {
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay for readability */
+}
+
+#landing::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://scontent.fmnl17-4.fna.fbcdn.net/v/t39.30808-6/482242182_1746338152609933_6918179702818293002_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeFfsAyU8f0nCd6PIItNDMjWGsem69GDev4ax6br0YN6_nOMazWAYGNpX-Djb_qi9kANR4_9JI9jAq66BGzBokZ0&_nc_ohc=HEsiEgundv8Q7kNvwFjJtnG&_nc_oc=AdlRsGJ6QS5ooJmHewjgI02AMpeUwCC5dsAuUex4bT7cnrb0KcFlfwhSChwtQ4tlqYU&_nc_zt=23&_nc_ht=scontent.fmnl17-4.fna&_nc_gid=Fcz1BM7CZbm_hjkVPe065g&_nc_ss=8&oh=00_Afz_TMroz7W3RvKlTIMPFDAa9waov032Mllk0JBXvA5jBw&oe=69B4C7CC');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    z-index: -1;
+}
+
+#myName {
+    transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+}
+
+#myName:hover {
+    transform: scale(1.1);
+    color: #ff0000b2; /* Change to a bright color on hover */
+    text-shadow: 0px 0px 10px rgba(164, 151, 151, 0.8); /* Add a glowing effect */
+}
+
+#myTitle {
+    transition: transform 0.3s ease, color 0.3s ease, text-shadow 0.3s ease;
+}
+
+#myTitle:hover {
+    transform: scale(1.1);
+    color: #ff0000b2; /* Change to a bright color on hover */
+    text-shadow: 0px 0px 10px rgba(164, 151, 151, 0.8); /* Add a glowing effect */
+}
+
+#profilePic {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#profilePic:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 20px rgba(164, 151, 151, 0.8);
+}
+
+
+
+.hover-pop:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hover-pop{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#tools {
+    background-image: url(https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.img-hover {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.img-hover:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#gmap_canvas {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
