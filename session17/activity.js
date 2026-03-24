@@ -1,0 +1,13 @@
+console.log("Hello World!");
+
+for (let i = 0; i <= 50; i++) {
+    if (i % 3 == 0 && i % 5 != 0) {
+    console.log("COUNT :" + i + "Coco");
+    }else if (i % 3 == 0 && i % 5 == 0) {
+    console.log("COUNT :" + i + " Coco Melon");
+    }else if (i % 5 == 0 && i % 3 != 0) {
+    console.log("COUNT :" + i + " Melon");
+    }else {
+    console.log("COUNT :" + i);
+    }
+}
