@@ -1,8 +1,10 @@
 console.log("Hello World!");
 
-for (let i = 0; i <= 50; i++) {
+let input = parseInt(prompt("Enter a number: "));
+
+for (let i = 1; i <= input; i++) {
     if (i % 3 == 0 && i % 5 != 0) {
-    console.log("COUNT :" + i + "Coco");
+    console.log("COUNT :" + i + " Coco");
     }else if (i % 3 == 0 && i % 5 == 0) {
     console.log("COUNT :" + i + " Coco Melon");
     }else if (i % 5 == 0 && i % 3 != 0) {
