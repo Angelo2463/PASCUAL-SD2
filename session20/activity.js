@@ -22,11 +22,8 @@ function removeFriend(name) {
 }
 
 function showFriends() {
-    if (friends.length > 0) {
-        console.log("Your friends list:");
-        for (let i = 0; i < friends.length; i++) {
-            console.log(`${i + 1}. ${friends[i]}`);
-        }
+    if (friends.length >= 0) {
+        console.log("Your friends list:" + friends);
     } else {
         console.log("Your friends list is empty.");
     }
@@ -35,4 +32,3 @@ function showFriends() {
 addFriend("Alice");
 addFriend("Bob");
 addFriend("Charlie");
-addFriend("Alice");
